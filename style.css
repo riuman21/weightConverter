@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B2F36;
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3rem;
+    color: #FF6800;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.container {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#stones {
+    margin-top: 15px;
+}
+
+#pounds {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    background: #3D4248;
+    color: #C9BBAE;
+    border: none;
+}
+
+button:hover {
+    background: #4C5056;
+    color: #FF6800;
+}
+
+input {
+    outline: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input:focus {
+    background: #EFEFEF;
+    outline: none;
+}
+
+#output {
+    text-align: center;
+}
+
+@media only screen and (max-width : 600px) {
+    h1 {
+        font-size: 2.1rem;
+        margin-top: 4rem;
+    }
+
+    .container {
+        width: 290px;
+    }
+} 
